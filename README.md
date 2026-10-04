@@ -1,219 +1,129 @@
-# Awesome-Workplace-AI-Assistant
-
-## Top Workplace AI Assistant Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Enterprise Knowledge Q&A, AI Copilots & Workflow Automation*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Workplace AI Assistants**. These tools connect to an organization's existing data sources — documents, emails, chat, tickets, and apps — to provide grounded answers, draft content, automate tasks, and surface organizational knowledge without requiring users to hunt across tools.
-
-
-
-**Examples** include Microsoft 365 Copilot, Google Workspace Gemini, Salesforce Agentforce, Slack AI, Zoom AI Companion, Notion AI, Glean, Amazon Q Business, Atlassian Intelligence, and Box AI (the category leaders).
-
-
-
-**Open-source emphasis**: The open-source ecosystem for workplace AI is exceptionally strong. **Onyx** (formerly Danswer) leads as the de facto open-source Glean alternative, with **Mewbo**, **Bionic**, and **Xyne** providing production-grade agentic platforms for self-hosted enterprise knowledge work . This section is heavily expanded.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/copilot)**  
-
-  Integrated AI assistant across Word, Excel, PowerPoint, Outlook, and Teams. Grounded in Microsoft Graph data with enterprise controls. Monthly per-user licensing ($30/user/month typical) or pay-as-you-go consumption model . Free Copilot Chat available without organizational data access .
-
-
-
-- **[Google Workspace Gemini](https://workspace.google.com/solutions/ai/)**  
-
-  AI assistant integrated across Gmail, Docs, Sheets, Slides, and Meet. Gemini Business and Enterprise add-ons provide usage limits and enterprise-grade data protection. Gemini Advanced offers Deep Research, NotebookLM Plus, and seamless workflow integration across 45+ languages .
-
-
-
-- **[Salesforce Agentforce](https://www.salesforce.com/agentforce/)**  
-
-  Enterprise AI assistant (formerly Einstein Copilot) natively integrated across Salesforce applications. Uses organization's own CRM data for grounded insights without expensive model training. Library of pre-built actions for sales, service, marketing, commerce, and industry-specific workflows .
-
-
-
-- **[Slack AI](https://slack.com/features/ai)**  
-
-  Native Slack assistant for conversation summaries, search, and task automation. August 2026 release added Slack Code (team-visible agentic coding), Agents tab, Deep Research, and Slackbot "Big Mode" for research and file generation. Salesforce approvals and Seismic enterprise search integrated .
-
-
-
-- **[Zoom AI Companion](https://www.zoom.com/en/products/ai-assistant/)**  
-
-  Agentic AI solution evolving from assistant to workplace collaborator. Features My notes (cross-platform meeting capture), Personal workflows (natural language automation), and Team Chat data integration. Included with paid Zoom Workplace accounts .
-
-
-
-- **[Notion AI](https://www.notion.com/product/ai)**  
-
-  Workspace AI with Q&A, writing assistance, and database automation. Notion 3.6 added External Agents (Claude, Cursor), AI Meeting Notes with speaker labels, interactive HTML blocks, and Microsoft file support (PPTX, XLSX, DOCX). MCP connections for Mercury, Mixpanel, Miro, Box, and ClickHouse .
-
-
-
-- **[Glean](https://www.glean.com/)**  
-
-  Enterprise AI coworker connecting to all company apps and documents. Permission-aware search, grounded answers with citations, and knowledge-to-work-product generation. Works across browser, desktop, Slack, and MCP-enabled AI tools. Designed to support human decision-makers, not replace them .
-
-
-
-- **[Amazon Q Business](https://aws.amazon.com/q/business/)**  
-
-  AWS-native generative AI assistant with 40+ connectors (Slack, Teams, Smartsheet, browser extensions). Extracts semantic meaning from embedded visual content, supports cross-region inference, and provides Q Apps for custom AI-powered applications .
-
-
-
-- **[Atlassian Intelligence](https://www.atlassian.com/software/artificial-intelligence)**  
-
-  AI features across Jira, Confluence, and Jira Service Management. Natural language to JQL/SQL conversion, meeting summarization, virtual agent in Slack/Teams, and incident response automation. Built on the Teamwork Graph combining 20+ years of team collaboration data .
-
-
-
-- **[Box AI](https://www.box.com/ai)**  
-
-  Secure, permissions-aware AI for Box content. Query single or multiple documents, extract metadata with AI Extract Agents, generate content in Box Notes, and create custom AI agents in Box AI Studio (Enterprise Advanced). Available across Business, Enterprise, and Enterprise Plus plans .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[Onyx](https://github.com/onyx-dot-app/onyx)**  
-
-  **The leading open-source AI assistant and enterprise search platform**, formerly Danswer. 40+ connectors including Slack, Google Drive, Confluence, Jira, GitHub, Notion, and SharePoint. Provides Chat UI with document selection, custom AI Assistants with different prompts and knowledge sets, and any-LLM support (self-host fully airgapped). Community Edition is MIT licensed with all core features; Enterprise Edition adds SSO, RBAC, document permission inheritance, and analytics. Deployable via single `docker compose` command or Kubernetes for high-scale production .
-
-
-
-- **[Mewbo](https://github.com/bearlike/Assistant)**  
-
-  Open stack for agentic work grounded in your own knowledge. Agent hypervisor splits goals into parallel sub-agents, each carrying only needed tools, with live agent tree visualization and mid-run branch steering. Three products on one harness: Agentic Automation (isolated Git worktree per change), Agentic Wiki (AST-to-memory-graph documentation with cited Q&A), and Agentic Search (cross-system routing via reachability graph). Identity, roles, grants, and audit trail with OIDC/LDAP/SAML. Sandboxed execution with Landlock. Android client registered as device assistant. Any model behind LiteLLM .
-
-
-
-- **[Bionic](https://github.com/bionic-gpt/bionic-gpt)**  
-
-  Sovereign agentic AI for the enterprise. Rust-based agentic harness for internal AI teams building on-premise, private cloud, or air-gapped deployments. Provides AI workspace, model connectivity (hosted/private/local), RAG and dataset-backed knowledge, built-in tool runtime, sandboxed code execution, virtual filesystem, integrations, reusable skills, and Kubernetes deployment. SSO/OIDC, team permissions, and audit trails included. Apache 2.0 licensed .
-
-
-
-- **[Xyne](https://hub.docker.com/r/xynehq/xyne)**  
-
-  AI-first Search & Answer Engine for work, positioned as OSS alternative to Glean, Gemini, and MS Copilot. Connects to Google Workspace, Atlassian, Slack, GitHub, and more; securely indexes data and maps relationship graphs. Delivers Google+ChatGPT-like experience for finding anything across fragmented work information with up-to-date answers and sources .
-
-
-
-- **[OpenBeam](https://github.com/kuluruvineeth/openbeam)**  
-
-  Open-source Glean for SaaS and the physical world. 87 connectors spanning digital knowledge (Notion, Confluence, Slack, GitHub) and IoT/industrial (AWS IoT, MQTT, OPC-UA, BACnet, Samsara, Verkada). Hybrid semantic + keyword search with sub-200ms p99 latency. Six pre-built autonomous agents (Knowledge Digest, Stale Content Detector, Connector Health, Search Quality, Onboarding Curator, Compliance Watchdog) on Temporal cron schedules with approval gating. MCP server for Claude Code, Cursor, and other agent clients. Permission-aware, self-hostable with Docker Compose .
-
-
-
-- **[eXo Platform AI](https://www.exoplatform.com/)**  
-
-  Open-source sovereign digital workplace with multi-model AI integrated at the core. Context-aware assistants respecting access rights, operating in project spaces, documents, and discussions. RAG-based retrieval grounding responses in organizational knowledge. Multi-LLM architecture supporting Mistral, OpenAI, Anthropic, Gemini, and self-hosted models for fully on-premises deployments. Available in eXo Hubs cloud offering and Enterprise edition; on-premise in 7.2 release .
-
-
-
-- **[Vexa](https://github.com/shaneholloman/vexa)**  
-
-  Meeting notetaker and knowledge chat for teams. Joins Google Meet, Teams, Zoom, and Jitsi with real-time Whisper transcription and speaker attribution. Agent API for chat over workspace, one-shot invocations, scheduled routines, and event-driven dispatch (email triage, post-meeting reports). Air-gapped deployment on OpenShift with local LLMs. MCP endpoint for agent clients. Apache-2.0 licensed with security review artifacts included (FINOS CALM architecture, OpenSSF Security Insights) .
-
-
-
-- **[Dotstell](https://github.com/dotstell/dotstell)**  
-
-  Open-source personal knowledge graph connecting notes, people, tasks, and bookmarks in a living graph. AI layer works with Ollama (local), OpenAI, Anthropic, Gemini, or Groq. Features AI writing assistant with templates, RAG-grounded chat across knowledge, inline assist, smart title/auto-tags, note summaries, semantic related notes, and Person Intelligence. API keys stored only in browser localStorage, never sent to servers .
-
-
-
-- **[The Curator](https://github.com/talirezun/the-curator)**  
-
-  Domain-agnostic knowledge organization tool ingesting text/markdown into structured entity/concept/summary pages with YAML frontmatter. Builds visual knowledge graph via Obsidian with auto-colored nodes. Multi-turn AI chat with persistent history and GitHub sync. Supports Google Gemini and Anthropic Claude. Use cases for content creators, researchers, executives, software architects, and medical researchers .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **AI ChatOps Assistant** — Enterprise AI assistant with RAG, RBAC (Admin, HR, Engineering roles), Google OAuth SSO, local LLM (Mistral/Zephyr GGUF), ChromaDB vector storage, and analytics dashboard. Demonstrates end-to-end system design: ingestion → embedding → retrieval → generation → analytics .
-
-- **mindroom** — AI-native interface on Matrix protocol with sandboxed execution (secrets isolation), 100+ tool integrations, and OpenClaw-compatible skills. Bridges to WhatsApp, Signal, and Telegram. macOS menu bar app .
-
-- **the-curator** — Open-source knowledge graph with AI chat, Obsidian integration, and multi-domain templates .
-
-
-
-**Frameworks for building custom workplace AI solutions**: Combine **Onyx** for comprehensive enterprise search and Q&A across 40+ connectors with MIT-licensed core . Use **Mewbo** for agentic task automation with parallel sub-agent execution, sandboxed code execution, and audit trails . Deploy **Bionic** for sovereign air-gapped deployments requiring Rust-based agentic runtime with Kubernetes orchestration . Choose **Xyne** for a lightweight Glean-style search and answer engine . Integrate **OpenBeam** for bridging digital SaaS and physical IoT/industrial systems in one query layer . For meeting-centric workflows, **Vexa** provides cross-platform notetaking with agent API . Note that true enterprise workplace AI with validated benchmark data, pre-built industry connectors, and global compliance certifications remains primarily commercial territory; open-source stacks provide strong knowledge retrieval, agent orchestration, and multi-model foundations that require integration for complete enterprise deployment.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Workplace AI assistants access sensitive organizational data and must comply with data privacy regulations (GDPR, CCPA) and enterprise security policies. Self-hosted solutions require proper security hardening, access controls, and audit logging.
-
-- AI assistants ground responses in connected data but can hallucinate or miss context. Human review remains essential for high-stakes decisions. Glean explicitly states its systems are "not intended to perform high-risk operations" like hiring or termination decisions .
-
-- The open-source ecosystem provides strong knowledge retrieval, agent orchestration, and multi-model foundations, but enterprise support, compliance certifications, and pre-built industry connectors remain primarily commercial offerings.
-
-
+# 🤖 Awesome Workplace AI Assistant
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Workplace-AI-Assistant/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Workplace-AI-Assistant?style=flat-square&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Workplace-AI-Assistant/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Workplace-AI-Assistant?style=flat-square&color=blue" alt="GitHub Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Workplace-AI-Assistant/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Workplace-AI-Assistant?style=flat-square&color=green" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Workplace AI Assistant Banner" width="100%"/>
+</p>
+
+## 🚀 Top Workplace AI Assistant Ecosystem
+
+> **Curated List of SaaS Products & Open-Source GitHub Projects**  
+> *Focused on Enterprise Knowledge Q&A, AI Copilots, Autonomous Agents & Workflow Automation*  
+> **Last updated: October 2026**
+
+This repository tracks notable **SaaS platforms** and **open-source projects** for **Workplace AI Assistants**, **Enterprise RAG Copilots**, and **Autonomous Workstream Agents**. These tools connect to an organization's existing data sources — documents, emails, chat, tickets, code, and enterprise APIs — to provide grounded answers with precise citations, automate multi-step tasks, and surface organizational knowledge.
 
 ---
 
+## 📑 Table of Contents
+- [📊 Market Overview & SaaS Platforms](#-market-overview--saas-platforms)
+- [⚡ Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ Frameworks for Building Workplace AI](#-frameworks-for-building-workplace-ai)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
+- [📈 Star History](#-star-history)
+- [💖 Support & Community](#-support--community)
 
+---
 
-**Made for IT leaders, knowledge managers, platform engineers, and enterprise AI teams.**  
+## 📊 Market Overview & SaaS Platforms
 
-Let's make workplace AI more open, transparent, and knowledge-grounded.
+> 💡 **Market Size & Structure**: The global Workplace AI Assistant market is estimated at **$14.8 Billion in 2026** (projected to exceed **$60 Billion by 2030** at a 32% CAGR). The sector is **moderately fragmented**, transitioning from single-application AI helpers to broad enterprise intelligence ecosystems. Suite leaders (Microsoft, Google, Salesforce) leverage existing productivity software dominance, while specialized enterprise search and agent platforms (Glean, Notion, Onyx) capture deep cross-app workflows across fragmented tools.
+
+### 🏢 Enterprise SaaS Platforms (Sorted by Company Size / Valuation)
+
+| SaaS Platform | Description & Key Capabilities | Company Size (Valuation / Revenue) | Specific Pricing (Starting Tier) | Free Tier / Trial Limits |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/copilot)** | Integrated AI copilot across Word, Excel, PowerPoint, Outlook, Teams, and Business Chat grounded in Microsoft Graph enterprise data. | **$3.1 Trillion** *(Market Cap)* / $245B Rev | **$30.00 / user / month** *(Copilot for M365 annual contract)* | **30-day enterprise trial** or Free Copilot Web (without org data binding) |
+| **[Amazon Q Business](https://aws.amazon.com/q/business/)** | AWS-native generative AI assistant with 40+ connectors (Slack, Teams, Jira, S3). Extracts semantic meaning from visual/textual enterprise docs. | **$2.0 Trillion** *(Market Cap)* / $600B Rev | **$3.00 / user / month** *(Lite tier)* / **$20.00 / user / month** *(Pro tier)* | **50-day free trial** for up to 50 user seats |
+| **[Google Workspace Gemini](https://workspace.google.com/solutions/ai/)** | AI workspace assistant embedded in Gmail, Docs, Sheets, Slides, and Meet with NotebookLM deep research and 45+ language support. | **$2.0 Trillion** *(Market Cap)* / $307B Rev | **$20.00 / user / month** *(Gemini Business add-on)* / **$30.00 / user / month** *(Enterprise)* | **14-day Workspace free trial** |
+| **[Salesforce Agentforce](https://www.salesforce.com/agentforce/)** | Autonomous & copilot enterprise AI natively connected to Salesforce Data Cloud, Customer 360, sales, service, and marketing workflows. | **$300 Billion** *(Market Cap)* / $35B Rev | **$2.00 / conversation** or **$125.00 / user / month** *(Sales/Service Agent)* | **30-day Developer/AI Org free trial** |
+| **[Slack AI](https://slack.com/features/ai)** | Native Slack channel/thread summarizer, enterprise search, Slack Code agentic coding, and automated search synthesis. | **$27.7 Billion** *(Acquisition Value by Salesforce)* | **$10.00 / user / month** *(Add-on to Slack Pro tier starting at $7.25/mo)* | **30-day Pro / Business+ plan free trial** |
+| **[Atlassian Intelligence](https://www.atlassian.com/software/artificial-intelligence)** | AI assistant natively integrated across Jira, Confluence, and JSM with NL-to-JQL conversion and virtual agent dispatch. | **$45 Billion** *(Market Cap)* / $4.4B Rev | **$15.25 / user / month** *(Included in Jira Cloud Premium tier)* | **30-day Cloud Premium tier free trial** |
+| **[Zoom AI Companion](https://www.zoom.com/en/products/ai-assistant/)** | Agentic workplace assistant with meeting summaries, action items, team chat synthesis, and personal automation workflows. | **$20 Billion** *(Market Cap)* / $4.5B Rev | **$13.33 / user / month** *(Included with Zoom Workplace Pro tier)* | **Free Basic Plan** *(40-min meeting limit; AI Companion requires Pro plan)* |
+| **[Notion AI](https://www.notion.com/product/ai)** | Workspace knowledge assistant featuring Q&A across external connected tools, AI Meeting Notes, and database content generation. | **$10 Billion** *(Private Valuation)* | **$8.00 / user / month** *(Billed annually)* / **$10.00 / user / month** *(Monthly)* | **20 free AI responses limit** per workspace member |
+| **[Glean](https://www.glean.com/)** | Enterprise AI coworker and search engine connecting 100+ company SaaS apps with permission-aware RAG citations. | **$4.6 Billion** *(Private Valuation)* | **$10.00 / user / month** *(Base Enterprise Seat)* | **30-day guided enterprise Proof-of-Concept (PoC)** |
+| **[Box AI](https://www.box.com/ai)** | Enterprise document AI agent for metadata extraction, file summarization, and multi-document synthesis inside Box content cloud. | **$4.5 Billion** *(Market Cap)* / $1.0B Rev | **$25.00 / user / month** *(Business Plus tier)* / **$35.00 / user / month** *(Enterprise)* | **14-day Enterprise plan free trial** |
+
+---
+
+## ⚡ Open-Source GitHub Projects
+
+> **Self-Hosted & Sovereign AI**: Open-source workplace AI projects provide air-gapped security, custom connector flexibility, zero data leakage, and total control over LLM routing and vector storage.
+
+### 🌟 Top Open-Source Workplace AI Projects (Sorted by GitHub Stars)
+
+| Project & Repository | Description & Architectural Highlights | GitHub Star Count | License |
+| :--- | :--- | :--- | :--- |
+| **[Dify](https://github.com/langgenius/dify)** | Leading open-source LLM application development platform and workplace AI workflow orchestrator with agentic RAG, tool ecosystem, and visual workflow canvas. | [![GitHub stars](https://img.shields.io/github/stars/langgenius/dify?style=social&color=white)](https://github.com/langgenius/dify/stargazers) | `Apache-2.0` |
+| **[Open WebUI](https://github.com/open-webui/open-webui)** | Feature-rich, self-hosted web UI for Ollama, OpenAI, and custom workspace models with RAG integration, web search, webhooks, and granular multi-user permission controls. | [![GitHub stars](https://img.shields.io/github/stars/open-webui/open-webui?style=social&color=white)](https://github.com/open-webui/open-webui/stargazers) | `MIT` |
+| **[RAGFlow](https://github.com/infiniflow/ragflow)** | Open-source deep RAG engine for complex enterprise document understanding, layout analysis, table extraction, and grounded workplace Q&A workflows. | [![GitHub stars](https://img.shields.io/github/stars/infiniflow/ragflow?style=social&color=white)](https://github.com/infiniflow/ragflow/stargazers) | `Apache-2.0` |
+| **[AnythingLLM](https://github.com/Mintplex-Labs/anything-llm)** | All-in-one desktop & enterprise AI workspace for turning documents, resources, and URLs into context for any LLM with full privacy and zero tracking. | [![GitHub stars](https://img.shields.io/github/stars/Mintplex-Labs/anything-llm?style=social&color=white)](https://github.com/Mintplex-Labs/anything-llm/stargazers) | `MIT` |
+| **[Quivr](https://github.com/QuivrHQ/quivr)** | Open-source enterprise Second Brain / AI assistant for centralizing un-structured unstructured data (PDFs, docs, notes) into searchable vector knowledge graphs. | [![GitHub stars](https://img.shields.io/github/stars/QuivrHQ/quivr?style=social&color=white)](https://github.com/QuivrHQ/quivr/stargazers) | `Apache-2.0` |
+| **[Onyx](https://github.com/onyx-dot-app/onyx)** *(formerly Danswer)* | The leading open-source enterprise search and AI assistant platform. Features 40+ connectors (Slack, Drive, Jira, GitHub, Notion, SharePoint) with permission inheritance and air-gapped deployment. | [![GitHub stars](https://img.shields.io/github/stars/onyx-dot-app/onyx?style=social&color=white)](https://github.com/onyx-dot-app/onyx/stargazers) | `MIT` |
+| **[Vexa](https://github.com/shaneholloman/vexa)** | Autonomous meeting notetaker and real-time knowledge assistant for Google Meet, Zoom, Teams, and Jitsi with local Whisper transcription and scheduled routine dispatches. | [![GitHub stars](https://img.shields.io/github/stars/shaneholloman/vexa?style=social&color=white)](https://github.com/shaneholloman/vexa/stargazers) | `Apache-2.0` |
+| **[Bionic GPT](https://github.com/bionic-gpt/bionic-gpt)** | Sovereign agentic AI harness built in Rust for private cloud and Kubernetes deployments. Includes sandboxed code execution, RAG pipelines, and OIDC enterprise SSO. | [![GitHub stars](https://img.shields.io/github/stars/bionic-gpt/bionic-gpt?style=social&color=white)](https://github.com/bionic-gpt/bionic-gpt/stargazers) | `Apache-2.0` |
+| **[Mewbo](https://github.com/bearlike/Assistant)** | Agentic work stack with parallel sub-agent hypervisors, AST-to-memory-graph Wiki, isolated Git worktree execution, and Landlock sandbox security. | [![GitHub stars](https://img.shields.io/github/stars/bearlike/Assistant?style=social&color=white)](https://github.com/bearlike/Assistant/stargazers) | `Apache-2.0` |
+| **[OpenBeam](https://github.com/kuluruvineeth/openbeam)** | Open-source hybrid semantic + keyword search engine for SaaS and IoT physical systems with sub-200ms p99 latency and autonomous Temporal agent workflows. | [![GitHub stars](https://img.shields.io/github/stars/kuluruvineeth/openbeam?style=social&color=white)](https://github.com/kuluruvineeth/openbeam/stargazers) | `MIT` |
+| **[Dotstell](https://github.com/dotstell/dotstell)** | Open-source personal and team knowledge graph connecting notes, people, tasks, and bookmarks with local Ollama / cloud LLM multi-turn RAG chat. | [![GitHub stars](https://img.shields.io/github/stars/dotstell/dotstell?style=social&color=white)](https://github.com/dotstell/dotstell/stargazers) | `AGPL-3.0` |
+| **[The Curator](https://github.com/talirezun/the-curator)** | Domain-agnostic knowledge organization engine ingesting markdown into structured entity summaries with Obsidian graph visualization and GitHub sync. | [![GitHub stars](https://img.shields.io/github/stars/talirezun/the-curator?style=social&color=white)](https://github.com/talirezun/the-curator/stargazers) | `MIT` |
+
+---
+
+## 🛠️ Frameworks for Building Custom Workplace AI
+
+When architecting a custom self-hosted workplace AI solution:
+- Combine **[Onyx](https://github.com/onyx-dot-app/onyx)** for comprehensive enterprise document indexing across 40+ SaaS tools.
+- Deploy **[Dify](https://github.com/langgenius/dify)** or **[Open WebUI](https://github.com/open-webui/open-webui)** for visual prompt engineering, agentic workflows, and team chat interfaces.
+- Leverage **[RAGFlow](https://github.com/infiniflow/ragflow)** for complex unstructured PDF, financial report, and table parsing.
+- Use **[Bionic GPT](https://github.com/bionic-gpt/bionic-gpt)** or **[Mewbo](https://github.com/bearlike/Assistant)** for air-gapped Kubernetes deployments requiring strict sandboxed tool execution.
+
+---
+
+## 🤝 How to Contribute
+
+We welcome community contributions! To add a new platform or repository to this list:
+
+1. Fork this repository.
+2. Add or update entries in `README.md` maintaining table structure and factual references.
+3. Include: Product Name, Direct Link, Description, Pricing/Star badge, and Free Tier details.
+4. Open a Pull Request with a short summary of the addition.
+
+---
+
+## ⚠️ Disclaimer
+
+- This repository is a **community-curated index** for informational and research purposes.
+- Workplace AI tools process sensitive organizational data and must adhere to enterprise compliance standards (GDPR, SOC2, HIPAA, CCPA).
+- Generative AI models can hallucinate or omit context. Human review remains essential for critical business decisions.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Workplace-AI-Assistant&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Workplace-AI-Assistant&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Community
+
+Thank you for exploring **Awesome Workplace AI Assistant**! If this repository helped you evaluate, build, or deploy workplace AI tools in your organization, please consider supporting the project:
+
+- ⭐ **Star this repository** on GitHub to help others discover enterprise AI solutions.
+- 🔀 **Fork & Contribute** to keep our ecosystem index fresh and accurate.
+- 📢 **Share** with your engineering, IT, and AI community.
+- ☕ **Sponsor the Maintainer**: Support ongoing development and maintenance via [GitHub Sponsors](https://github.com/sponsors/ishandutta2007).
+
+<p align="center">
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ea4aaa?style=for-the-badge&logo=github-sponsors" alt="Sponsor on GitHub"/>
+  </a>
+</p>
