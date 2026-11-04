@@ -52,6 +52,7 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 | **[Notion AI](https://www.notion.com/product/ai)** | Workspace knowledge assistant featuring Q&A across external connected tools, AI Meeting Notes, and database content generation. | **$10 Billion** *(Private Valuation)* | **$8.00 / user / month** *(Billed annually)* / **$10.00 / user / month** *(Monthly)* | **20 free AI responses limit** per workspace member |
 | **[Glean](https://www.glean.com/)** | Enterprise AI coworker and search engine connecting 100+ company SaaS apps with permission-aware RAG citations. | **$4.6 Billion** *(Private Valuation)* | **$10.00 / user / month** *(Base Enterprise Seat)* | **30-day guided enterprise Proof-of-Concept (PoC)** |
 | **[Box AI](https://www.box.com/ai)** | Enterprise document AI agent for metadata extraction, file summarization, and multi-document synthesis inside Box content cloud. | **$4.5 Billion** *(Market Cap)* / $1.0B Rev | **$25.00 / user / month** *(Business Plus tier)* / **$35.00 / user / month** *(Enterprise)* | **14-day Enterprise plan free trial** |
+| **[Enhanciar](https://enhanciar.in/?utm_source=directory&utm_medium=listing&utm_campaign=awesome-workplace-ai-assistant)** | Company brain that answers from Slack, Gmail, Notion, Drive, Jira, Linear and GitHub with a source link on every claim, then drafts the reply, ticket or doc for a person to approve. | **Private** *(early stage)* | **$24.00 / month** *(Solo)* / **$100.00 / month** *(Team)* | **Paid plans only; bring your own AI key** |
 
 ---
 
